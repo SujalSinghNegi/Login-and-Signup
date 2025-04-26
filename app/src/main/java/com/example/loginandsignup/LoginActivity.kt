@@ -66,6 +66,10 @@ class LoginActivity : AppCompatActivity() {
                     }
             }
         }
+
+        binding.google.setOnClickListener {
+
+        }
     }
 
 }

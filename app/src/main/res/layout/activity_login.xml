@@ -90,15 +90,30 @@
         app:layout_constraintStart_toStartOf="@+id/password"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
+    <TextView
+        android:id="@+id/forgot_pswd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="OR \n Sign In with google"
+        android:textAlignment="center"
+
+        android:textColor="#090909"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/google"
+        app:layout_constraintEnd_toEndOf="@+id/google"
+        app:layout_constraintStart_toStartOf="@+id/google" />
+
     <Button
         android:id="@+id/signup"
         android:layout_width="118dp"
         android:layout_height="52dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="#474242"
         android:text="Sign Up"
         app:cornerRadius="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/login"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/forgot_pswd" />
 
@@ -106,13 +121,30 @@
         android:id="@+id/login"
         android:layout_width="118dp"
         android:layout_height="52sp"
-        android:layout_marginStart="64dp"
         android:backgroundTint="#A81010"
         android:text="Log In"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/signup"
         app:layout_constraintTop_toTopOf="@+id/signup"
         app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/google"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="  Google"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/login"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/signup"
+        app:layout_constraintTop_toBottomOf="@+id/signup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
